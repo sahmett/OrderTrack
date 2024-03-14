@@ -4,9 +4,9 @@ using Microsoft.Extensions.Configuration;
 
 namespace OrderTrack.Persistence.Context
 {
-    public class OrderTrackDbContextFactory : IDesignTimeDbContextFactory<OrderTrackContext>
+    public class OrderTrackDbContextFactory : IDesignTimeDbContextFactory<OrderTrackDbContext>
     {
-        public OrderTrackContext CreateDbContext(string[] args)
+        public OrderTrackDbContext CreateDbContext(string[] args)
         {
             // Projenizin kök dizinine göre doğru yolu ayarlayın
             var basePath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..", "OrderTrack.API"));
@@ -14,11 +14,11 @@ namespace OrderTrack.Persistence.Context
                 .AddJsonFile("appsettings.json")
                 .Build();
 
-            var optionsBuilder = new DbContextOptionsBuilder<OrderTrackContext>();
+            var optionsBuilder = new DbContextOptionsBuilder<OrderTrackDbContext>();
             var connectionString = configuration.GetConnectionString("PostgreSQLDB");
             optionsBuilder.UseNpgsql(connectionString);
 
-            return new OrderTrackContext(optionsBuilder.Options);
+            return new OrderTrackDbContext(optionsBuilder.Options);
         }
 
 

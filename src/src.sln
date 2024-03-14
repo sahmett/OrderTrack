@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{0C96C48E-086
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderTrack.Persistence", "Infrastructure\OrderTrack.Infrastructure\OrderTrack.Persistence.csproj", "{B0961639-4969-4D6C-9477-594205C849B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderTrackMVC", "Web\OrderTrackMVC\OrderTrackMVC.csproj", "{F488092C-5AE6-4C09-BA85-8817C721E5CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{B0961639-4969-4D6C-9477-594205C849B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0961639-4969-4D6C-9477-594205C849B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0961639-4969-4D6C-9477-594205C849B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F488092C-5AE6-4C09-BA85-8817C721E5CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F488092C-5AE6-4C09-BA85-8817C721E5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F488092C-5AE6-4C09-BA85-8817C721E5CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F488092C-5AE6-4C09-BA85-8817C721E5CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{B86590EE-8088-435E-94F4-B3C0BA671193} = {08EACA62-E9F8-4D9D-B4C8-C449E46C2989}
 		{0DDC1819-5D4E-4A25-9990-046E1896C75C} = {08EACA62-E9F8-4D9D-B4C8-C449E46C2989}
 		{B0961639-4969-4D6C-9477-594205C849B4} = {9EB25E6E-BFC1-4865-B09D-546806D2F5EA}
+		{F488092C-5AE6-4C09-BA85-8817C721E5CC} = {0C96C48E-0864-431F-8B20-006C3360E11D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8AC0B5A5-931D-40A4-83FC-DD1BC9858A82}

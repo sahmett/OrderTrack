@@ -9,14 +9,16 @@ using System.Threading.Tasks;
 
 namespace OrderTrack.Persistence.Context
 {
-    public class OrderTrackContext : DbContext
+    public class OrderTrackDbContext : DbContext
     {
-        //create db context for address, customer, order, product
+       
         public DbSet<Address> Address { get; set; }
-        public DbSet<Customer> Customer { get; set; }
-        public DbSet<Order> Order { get; set; }
         public DbSet<Product> Product { get; set; }
-        public OrderTrackContext(DbContextOptions<OrderTrackContext> dbContextOptions): base(dbContextOptions)
+
+        //public DbSet<Customer> Customer { get; set; }
+        //public DbSet<Order> Order { get; set; }
+
+        public OrderTrackDbContext(DbContextOptions<OrderTrackDbContext> dbContextOptions): base(dbContextOptions)
         {
         }
 
@@ -26,10 +28,10 @@ namespace OrderTrack.Persistence.Context
             base.OnModelCreating(modelBuilder);
 
             // Fluent API & konfig.
-            modelBuilder.Entity<Customer>()
-            .HasMany(c => c.Orders)
-            .WithOne(o => o.Customer)
-            .HasForeignKey(o => o.CustomerId);
+
+            // Customer ve Order arasındaki ilişki one-many
+
+         
         }
     }
 }
