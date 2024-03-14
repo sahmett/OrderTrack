@@ -1,4 +1,4 @@
-﻿namespace OrderTrack.Infrastructure
+﻿namespace OrderTrack.Persistence
 {
     public class Class1
     {

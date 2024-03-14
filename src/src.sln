@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{0C96C48E-0864-431F-8B20-006C3360E11D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderTrack.Infrastructure", "Infrastructure\OrderTrack.Infrastructure\OrderTrack.Infrastructure.csproj", "{B0961639-4969-4D6C-9477-594205C849B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderTrack.Persistence", "Infrastructure\OrderTrack.Infrastructure\OrderTrack.Persistence.csproj", "{B0961639-4969-4D6C-9477-594205C849B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
