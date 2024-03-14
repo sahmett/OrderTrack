@@ -8,10 +8,13 @@ builder.Services.AddControllersWithViews();
 
 
 builder.Services.AddDbContext<CustomerDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("CustomerDbConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("OrderTrackDatabase")));
 
 builder.Services.AddDbContext<OrderDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("OrderDbConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("OrderTrackDatabase")));
+
+builder.Services.AddDbContext<OrderTrackDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("OrderTrackDatabase")));
 
 var app = builder.Build();
 

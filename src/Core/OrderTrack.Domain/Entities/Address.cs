@@ -8,6 +8,7 @@ namespace OrderTrack.Domain.Entities
 {
     public class Address 
     {
+        public Guid Id { get; set; } = Guid.NewGuid();
         public string AddressLine { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
