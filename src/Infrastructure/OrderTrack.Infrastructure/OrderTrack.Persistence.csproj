@@ -8,9 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Configuration\" />
-    <Folder Include="Migrations\CustomerDb\" />
-    <Folder Include="Migrations\OrderDb\" />
-    <Folder Include="Migrations\OrderTrackDb\" />
   </ItemGroup>
 
   <ItemGroup>
